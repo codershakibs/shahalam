@@ -1,0 +1,255 @@
+/* font face  */
+@font-face {
+  font-family: 'Inter Display';
+  src: url('../font/InterDisplay-Black.woff2') format('woff2'),
+    url('../font/InterDisplay-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter Display';
+  src: url('../font/InterDisplay-Bold.woff2') format('woff2'),
+    url('../font/InterDisplay-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter Display';
+  src: url('../font/InterDisplay-Light.woff2') format('woff2'),
+    url('../font/InterDisplay-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter Display';
+  src: url('../font/InterDisplay-Medium.woff2') format('woff2'),
+    url('../font/InterDisplay-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter Display';
+  src: url('../font/InterDisplay-SemiBold.woff2') format('woff2'),
+    url('../font/InterDisplay-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter Display';
+  src: url('../font/InterDisplay-Regular.woff2') format('woff2'),
+    url('../font/InterDisplay-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* font face end  */
+
+@import "tailwindcss";
+
+@theme {
+  --color-offwhite: #F9F9F9;
+  --color-primary: #336AEA;
+  --color-black: #1F1F1F;
+  --color-gray-1: #808080;
+  --color-black-2: #2F2F2F;
+  --color-gray-3: #6B7280;
+  --color-gray-4: #F3F4F6;
+  --color-gray2: #BFC0C6;
+  --color-offwhite2: #BFC3C1;
+  --color-offwhite3: #E2E4E8;
+}
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+.container {
+  max-width: 1504px;
+  width: 100%;
+  margin: auto;
+}
+
+/* @media (max-width:640px) {
+  .container {
+    padding-inline: 16px;
+  }
+} */
+
+
+
+@layer base {
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.section-padding {
+  padding-block: 120px;
+}
+
+@media (max-width:1024px) {
+  .section-padding {
+    padding-block: 56px;
+  }
+}
+
+@media (max-width:640px) {
+  .section-padding {
+    padding-block: 56px;
+  }
+}
+
+
+
+/* =========================
+   CSS RESET / BASE
+========================= */
+
+/* Box sizing reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin & padding */
+
+/* HTML & body */
+body {
+  height: 100%;
+  font-family: 'Inter Display';
+  background-color: #FFF;
+}
+
+
+
+
+
+
+/* Remove link underline */
+a {
+  text-decoration: none;
+}
+
+/* Images responsive */
+img,
+picture,
+video,
+canvas {
+  max-width: 100%;
+  display: block;
+}
+
+/* Form elements inherit font */
+
+
+/* Button cursor */
+button {
+  cursor: pointer;
+}
+
+/* Table reset */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+.marquee-track {
+  display: flex;
+  gap: 48px;
+  width: max-content;
+  animation: marquee 28s linear infinite;
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+
+/* Slide cards */
+.slide-card {
+  flex-shrink: 0;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+[text-split] {
+  /* opacity: 0; এটা বাদ দিন, নাহলে কিছুই দেখা যাবে না */
+  visibility: visible !important;
+}
+
+.word {
+  display: inline-block;
+  margin-right: 0.2em;
+  transition: color 0.5s ease;
+}
+
+
+.splide__arrow {
+  width: 68px !important;
+  height: 52px !important;
+  background-color: White !important;
+  border-radius: 1000px !important;
+}
+
+.splide__arrow:hover {
+  background-color: var(--color-primary) !important;
+}
+
+.splide__arrow:hover:hover svg * {
+  color: white;
+}
+
+.project-item {
+  box-shadow: 0 50px 160px -80px rgba(0, 48, 93, 0.16), 2px 4px 32px 0 rgba(0, 0, 0, 0.05);
+}
+
+#navbar {
+  box-shadow: 2px 4px 32px 0 rgba(0, 0, 0, 0.05);
+}
+
+/* scroll Animation css  */
+.fade-up {
+  will-change: transform, opacity;
+}

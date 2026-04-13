@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shorif Ahammed</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.14/dist/lenis.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+</head>
+
+<body>
+
+
+    <!-- ═══════════════════════════
+       NAVBAR
+  ═══════════════════════════ -->
+    <div class="py-6 lg:py-6 bg-[#F3F4F6]">
+        <nav id="navbar"
+            class="mx-auto w-[calc(100%-20px)] p-2 max-w-183.5 sm:min-w-87 md:w-full z-50 transition-all duration-300 bg-[#F6F6F6] rounded-full border border-white">
+            <div class="container">
+                <div class="flex gap-5 align-middle items-center">
+                    <a href="index.html"
+                        class="flex items-center gap-2.5 shrink-0 border border-white bg-white rounded-[100px] pr-6 ">
+                        <img src="assets/image/logo-img.svg" alt="book-demo" class="img-fluid">
+                        <span class="text-lg lg:text-lg text-black font-medium leading-none inter-display">Shah
+                            Alam</span>
+                    </a>
+                    <ul class="hidden lg:flex md:hidden sm:hidden flex items-center gap-x-4">
+                        <li><a href="index.html#about"
+                                class="px-4 py-3 text-[16px] lg:text-[16px] font-normal leading-none text-gray-1 hover:text-black  rounded-full hover:bg-white transition-colors duration-200">Home</a>
+                        </li>
+                        <li><a href="#about"
+                                class="px-4 py-3 text-[16px] lg:text-[16px] font-normal leading-none text-gray-1 hover:text-black  rounded-full hover:bg-white transition-colors duration-200">About</a>
+                        </li>
+                        <li><a href="#service"
+                                class="px-4 py-3 text-[16px] lg:text-[16px] font-normal leading-none text-gray-1 hover:text-black  rounded-full hover:bg-white transition-colors duration-200">Services</a>
+                        </li>
+                        <li><a href="project.html"
+                                class="px-4 py-3 text-[16px] lg:text-[16px] font-normal leading-none text-gray-1 hover:text-black  rounded-full hover:bg-white transition-colors duration-200">Projects</a>
+                        </li>
+                        <li><a href="#testimonial"
+                                class="px-4 py-3 text-[16px] lg:text-[16px] font-normal leading-none text-gray-1 hover:text-black  rounded-full hover:bg-white transition-colors duration-200">Testimonials</a>
+                        </li>
+
+                    </ul>
+                    <button id="hamburger"
+                        class="lg:hidden md:flex sm:flex ml-auto relative flex flex-col justify-center items-center w-8 h-8 focus:outline-none"
+                        aria-label="Toggle menu">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M18.3333 6.89102V3.52435C18.3333 2.19935 17.8 1.66602 16.475 1.66602H13.1083C11.7833 1.66602 11.25 2.19935 11.25 3.52435V6.89102C11.25 8.21602 11.7833 8.74935 13.1083 8.74935H16.475C17.8 8.74935 18.3333 8.21602 18.3333 6.89102Z"
+                                stroke="#336AEA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M8.75033 7.09935V3.31602C8.75033 2.14102 8.21699 1.66602 6.89199 1.66602H3.52533C2.20033 1.66602 1.66699 2.14102 1.66699 3.31602V7.09102C1.66699 8.27435 2.20033 8.74102 3.52533 8.74102H6.89199C8.21699 8.74935 8.75033 8.27435 8.75033 7.09935Z"
+                                stroke="#336AEA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M8.75033 16.475V13.1083C8.75033 11.7833 8.21699 11.25 6.89199 11.25H3.52533C2.20033 11.25 1.66699 11.7833 1.66699 13.1083V16.475C1.66699 17.8 2.20033 18.3333 3.52533 18.3333H6.89199C8.21699 18.3333 8.75033 17.8 8.75033 16.475Z"
+                                stroke="#336AEA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M12.5 12.916H17.5" stroke="#336AEA" stroke-width="1.5" stroke-linecap="round" />
+                            <path d="M12.5 16.25H17.5" stroke="#336AEA" stroke-width="1.5" stroke-linecap="round" />
+                        </svg>
+
+                    </button>
+                </div>
+            </div>
+
+            <div id="mobile-menu"
+                class=" absolute min-w-[300px] rounded-2xl  left-0 w-full overflow-hidden max-h-0 transition-all duration-500 ease-in-out bg-[#000323]/95 backdrop-blur-lg">
+                <div class="container px-[16px] py-6 px-5 flex flex-col gap-5 border-t border-white/10">
+                    <a href="index.html#about"
+                        class="text-[18px] text-white hover:text-[#B2B3BD] transition-colors duration-200">About</a>
+                    <a href="case-study.html"
+                        class="text-[18px] text-white hover:text-[#B2B3BD] transition-colors duration-200">Work</a>
+                    <a href="#"
+                        class="text-[18px] text-white hover:text-[#B2B3BD] transition-colors duration-200">Download
+                        CV</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- navbar end -->
+
+    <!-- tab section start  -->
+    <section class="section-padding bg-[#F3F4F6]">
+        <div class="container px-[16px]">
+            <div class="flex flex-col lg:gap-6 gap-4">
+                <div class="lg:max-w-[650px] text-center mx-auto">
+                    <h1 class=" fade-up lg:text-[64px] text-[32px] font-bold leading-[120.313%] uppercase text-black"
+                        data-delay="0.7">Featured
+                        Work
+                        and Case Studies</h1>
+                </div>
+                <p class="lg:text-[20px] font-normal leading-[140%] text-gray-3 lg:max-w-[856px] text-center mx-auto">A
+                    curated
+                    selection of
+                    projects built with clarity, strategy, and purpose. Each one reflects my approach to solving
+                    problems through thoughtful design.</p>
+
+                <!-- project tab   -->
+                <div>
+                    <!-- Tabs -->
+                    <div class="flex gap-3 mb-8 justify-center flex-wrap">
+                        <button
+                            class="tab px-6 py-4 rounded-[100px] bg-white text-[16px] font-normal leading-[100%] text-[#9CA3AF] border-1 border-[#D1D5DB]"
+                            data-filter="all">All</button>
+                        <button
+                            class="tab px-6 py-4 rounded-[100px] bg-white text-[16px] font-normal leading-[100%] text-[#9CA3AF] border-1 border-[#D1D5DB]"
+                            data-filter="design">Web Design</button>
+                        <button
+                            class="tab px-6 py-4 rounded-[100px] bg-white text-[16px] font-normal leading-[100%] text-[#9CA3AF] border-1 border-[#D1D5DB]"
+                            data-filter="app">Mobile app design</button>
+                        <button
+                            class="tab px-6 py-4 rounded-[100px] bg-white text-[16px] font-normal leading-[100%] text-[#9CA3AF] border-1 border-[#D1D5DB]"
+                            data-filter="branding">Branding</button>
+                        <button
+                            class="tab px-6 py-4 rounded-[100px] bg-white text-[16px] font-normal leading-[100%] text-[#9CA3AF] border-1 border-[#D1D5DB]"
+                            data-filter="saas">Saas Design</button>
+                    </div>
+
+                    <!-- Cards -->
+                    <div id="cardcontainer px-[16px]" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[31px]">
+                        <a href="#">
+                            <div class="card project-item rounded-2xl overflow-hidden group bg-white"
+                                data-category="design">
+                                <div class="overflow-hidden">
+                                    <img class="transition-transform duration-500 ease-in-out group-hover:scale-[1.01]"
+                                        src="assets/image/project-image-1.webp" alt="">
+                                </div>
+                                <div class="lg:p-6 p-4 bg-white flex flex-col lg:gap-3.5 gap-4 lg:min-h-[136px]">
+                                    <div class="flex lg:flex-row flex-col lg:gap-9 gap-2 justify-between">
+                                        <h3
+                                            class="truncate line-clamp-1 lg:text-2xl font-bold leading-[120.833%] text-black uppercase">
+                                            Pixelcraft | Fashion eCommerce Clothing Website</h3>
+                                        <p
+                                            class="lg:text-[16px] font-normal leading-[100%] text-[#9CA3AF] flex-shrink-0">
+                                            2
+                                            JAN,
+                                            2026</p>
+                                    </div>
+                                    <p class="lg:text-[16px] font-normal leading-[137.5%] text-gray-3">Pixelcraft is
+                                        an e-commerce website concept, designed for fashion shoppers.</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="card project-item rounded-2xl overflow-hidden group bg-white"
+                                data-category="app">
+                                <div class="overflow-hidden">
+                                    <img class="transition-transform duration-500 ease-in-out group-hover:scale-[1.01]"
+                                        src="assets/image/project-image-2.webp" alt="">
+                                </div>
+                                <div class="lg:p-6 p-4 bg-white flex flex-col lg:gap-3.5 gap-4 lg:min-h-[136px]">
+                                    <div class="flex lg:flex-row flex-col lg:gap-9 gap-2 justify-between">
+                                        <h3
+                                            class="truncate line-clamp-1 lg:text-2xl font-bold leading-[120.833%] text-black uppercase">
+                                            LEHOOKER | Sports Website for Rugby Football Store</h3>
+                                        <p
+                                            class="lg:text-[16px] font-normal leading-[100%] text-[#9CA3AF] flex-shrink-0">
+                                            2
+                                            JAN,
+                                            2026</p>
+                                    </div>
+                                    <p class="lg:text-[16px] font-normal leading-[137.5%] text-gray-3">LEHOOKER is a
+                                        sports
+                                        gear ecommerce brand built for sports clubs, athletes, and sports shoppers.</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class=" card project-item rounded-2xl overflow-hidden group bg-white"
+                                data-category="branding">
+                                <div class="overflow-hidden">
+                                    <img class="transition-transform duration-500 ease-in-out group-hover:scale-[1.01]"
+                                        src="assets/image/project-image-3.webp" alt="">
+                                </div>
+                                <div class="lg:p-6 p-4 bg-white flex flex-col lg:gap-3.5 gap-4 lg:min-h-[136px]">
+                                    <div class="flex lg:flex-row flex-col lg:gap-9 gap-2 justify-between">
+                                        <h3
+                                            class="truncate line-clamp-1 lg:text-2xl font-bold leading-[120.833%] text-black uppercase">
+                                            Travelora | Travel Website Design for Travel Agency</h3>
+                                        <p
+                                            class="lg:text-[16px] font-normal leading-[100%] text-[#9CA3AF] flex-shrink-0">
+                                            2
+                                            JAN,
+                                            2026</p>
+                                    </div>
+                                    <p class="lg:text-[16px] font-normal leading-[137.5%] text-gray-3">Travelora is
+                                        a travel
+                                        booking website for avid travelers.</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#">
+                            <div class=" card project-item rounded-2xl overflow-hidden group bg-white"
+                                data-category="saas">
+                                <div class="overflow-hidden">
+                                    <img class="transition-transform duration-500 ease-in-out group-hover:scale-[1.01]"
+                                        src="assets/image/project-image-4.webp" alt="">
+                                </div>
+                                <div class="lg:p-6 p-4 bg-white flex flex-col lg:gap-3.5 gap-4 lg:min-h-[136px]">
+                                    <div class="flex lg:flex-row flex-col lg:gap-9 gap-2 justify-between">
+                                        <h3
+                                            class="truncate line-clamp-1 lg:text-2xl font-bold leading-[120.833%] text-black uppercase">
+                                            FlexTrack - Fitness Mobile App UI Design</h3>
+                                        <p
+                                            class="lg:text-[16px] font-normal leading-[100%] text-[#9CA3AF] flex-shrink-0">
+                                            2
+                                            JAN,
+                                            2026</p>
+                                    </div>
+                                    <p class="lg:text-[16px] font-normal leading-[137.5%] text-gray-3">Web dashboard
+                                        interface
+                                        designed for a real estate platform. Includes
+                                        data visualization and layout structure.</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#">
+                            <div class=" card project-item rounded-2xl overflow-hidden group bg-white"
+                                data-category="branding">
+                                <div class="overflow-hidden">
+                                    <img class="transition-transform duration-500 ease-in-out group-hover:scale-[1.01]"
+                                        src="assets/image/project-image-5.webp" alt="">
+                                </div>
+                                <div class="lg:p-6 p-4 bg-white flex flex-col lg:gap-3.5 gap-4 lg:min-h-[136px]">
+                                    <div class="flex lg:flex-row flex-col lg:gap-9 gap-2 justify-between">
+                                        <h3
+                                            class="truncate line-clamp-1 lg:text-2xl font-bold leading-[120.833%] text-black uppercase">
+                                            Keyscape – Real Estate Mobile App</h3>
+                                        <p
+                                            class="lg:text-[16px] font-normal leading-[100%] text-[#9CA3AF] flex-shrink-0">
+                                            2
+                                            JAN,
+                                            2026</p>
+                                    </div>
+                                    <p class="lg:text-[16px] font-normal leading-[137.5%] text-gray-3">A modern real
+                                        estate
+                                        app
+                                        UI designed for effortless property search and discovery</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#">
+                            <div class=" card project-item rounded-2xl overflow-hidden group bg-white"
+                                data-category="app">
+                                <div class="overflow-hidden">
+                                    <img class="transition-transform duration-500 ease-in-out group-hover:scale-[1.01]"
+                                        src="assets/image/project-image-6.webp" alt="">
+                                </div>
+                                <div class="lg:p-6 p-4 bg-white flex flex-col lg:gap-3.5 gap-4 lg:min-h-[136px]">
+                                    <div class="flex lg:flex-row flex-col lg:gap-9 gap-2 justify-between">
+                                        <h3
+                                            class="truncate line-clamp-1 lg:text-2xl font-bold leading-[120.833%] text-black uppercase">
+                                            PrimeSwing | Real Estate Dashboard | UI/UX Design</h3>
+                                        <p
+                                            class="lg:text-[16px] font-normal leading-[100%] text-[#9CA3AF] flex-shrink-0">
+                                            2
+                                            JAN,
+                                            2026</p>
+                                    </div>
+                                    <p class="lg:text-[16px] font-normal leading-[137.5%] text-gray-3">Designed a bold,
+                                        focused,
+                                        and performance-driven golf coaching website landing page.</p>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- testimonial section  -->
+    <section id="testimonial" class="section-padding bg-[#F3F4F6]">
+        <div class="container px-[16px]">
+            <div class="flex flex-col items-center lg:gap-6 gap-4 lg:pb-12 pb-6">
+                <p class="lg:text-2xl text-[18px] font-semibold leading-[120.833%] uppercase text-black">Testimonials
+                </p>
+                <div class="lg:max-w-[720px] text-center">
+                    <h2 class=" fade-up lg:text-[64px] text-[32px] font-bold leading-[120.313%] uppercase text-black" data-delay="0.4">What
+                        Clients Say About
+                        My Work</h2>
+                </div>
+                <div class="lg:max-w-[856px] text-center">
+                    <p class="lg:text-[20px] font-normal leading-[140%] text-gray-3">Honest feedback from clients I’ve
+                        worked with across different projects.  Their words reflect the value of clear communication,
+                        quality, and thoughtful design.</p>
+                </div>
+            </div>
+            <!-- splide slider  -->
+        </div>
+
+        <!-- testimonial slider  -->
+        <div class="splide relative mb-[50px]" id="main-slider" aria-label="Custom Arrows Example">
+            <div class="splide__arrows absolute bottom-[-15%] left-1/2 translate-x-1/2 z-10 text-[#6B7280]">
+                <button class="splide__arrow  splide__arrow--next">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6">
+                        <path d="M10.5 19.5L3 12M3 12L10.5 4.5M3 12H21" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                </button>
+                <button class="splide__arrow splide__arrow--prev">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6">
+                        <path d="M10.5 19.5L3 12M3 12L10.5 4.5M3 12H21" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <div class="testimonial-card p-8 rounded-3xl bg-white  ">
+                            <div class="flex flex-col items-center">
+                                <div class="lg:pb-3">
+                                    <img src="assets/image/client-img-1.png" alt="">
+                                </div>
+                                <h3 class="lg:text-[20px] font-bold leading-[120%] uppercase text-black pb-1.5">Dianne
+                                    Russell</h3>
+                                <p class="lg:text-[18px] font-normal leading-[100%] text-gray-3">Organization
+                                    Administrator
+                                </p>
+                                <div class="w-full h-[1px] bg-[#D1D5DB] my-4"></div>
+                                <p
+                                    class="lg:text-[20px] font-normal leading-[140%] text-[#4B5563] text-center line-clamp-5">
+                                    Navigation became simpler, the interface felt modern, and users understood key
+                                    actions much faster.Navigation became simpler, the interface felt modern, and users
+                                    understood key actions much faster.Navigation became simpler, the interface felt
+                                    modern, and users understood key actions much faster.Navigation became simpler, the
+                                    interface felt modern.</p>
+                                <div class="flex pt-4">
+                                    <img src="assets/image/star-fill.svg" alt="star-icon">
+                                    <img src="assets/image/star-fill.svg" alt="star-icon">
+                                    <img src="assets/image/star-fill.svg" alt="star-icon">
+                                    <img src="assets/image/star-fill.svg" alt="star-icon">
+                                    <img src="assets/image/star-gray.svg" alt="star-icon">
+                                </div>
+                            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+
+
+
+                    </li>
+                    <li class="splide__slide">
+                        <div class="testimonial-card p-8 rounded-3xl bg-white  ">
+                            <div class="flex flex-col items-center">
+                                <div class="lg:pb-3">
+                                    <img src="assets/image/client-img-2.svg" alt="">
+                                </div>
+                                <h3 class="lg:text-[20px] font-bold leading-[120%] uppercase text-black pb-1.5">Jacob
+                                    Jones</h3>
+                                <p class="lg:text-[18px] font-normal leading-[100%] text-gray-3">Vice President
+                                </p>
+                                <div class="w-full h-[1px] bg-[#D1D5DB] my-4"></div>
+                                <p
+                                    class="lg:text-[20px] font-normal leading-[140%] text-[#4B5563] text-center line-clamp-5">
+                                    Navigation became simpler, the interface felt modern, and users understood key
+                                    actions much faster.Navigation became simpler, the interface felt modern, and users
+                                    understood key actions much faster.Navigation became simpler, the interface felt
+                                    modern, and users understood key actions much faster.Navigation became simpler, the
+                                    interface felt modern.</p>
+                                <div class="flex pt-4">
+                                    <img src="assets/image/star-fill.svg" alt="star-icon">
+                                    <img src="assets/image/star-fill.svg" alt="star-icon">
+                                    <img src="assets/image/star-fill.svg" alt="star-icon">
+                                    <img src="assets/image/star-fill.svg" alt="star-icon">
+                                    <img src="assets/image/star-gray.svg" alt="star-icon">
+                                </div>
+                            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+
+
+
+                    </li>
+                    <li class="splide__slide">
+                        <div class="testimonial-card p-8 rounded-3xl bg-white  ">
+                            <div class="flex flex-col items-center">
+                                <div class="lg:pb-3">
+                                    <img src="assets/image/client-img-3.svg" alt="">
+                                </div>
+                                <h3 class="lg:text-[20px] font-bold leading-[120%] uppercase text-black pb-1.5">Arlene
+                                    McCoy</h3>
+                                <p class="lg:text-[18px] font-normal leading-[100%] text-gray-3">Branch Manager
+                                </p>
+                                <div class="w-full h-[1px] bg-[#D1D5DB] my-4"></div>
+                                <p
+                                    class="lg:text-[20px] font-normal leading-[140%] text-[#4B5563] text-center line-clamp-5">
+                                    Navigation became simpler, the interface felt modern, and users understood key
+                                    actions much faster.Navigation became simpler, the interface felt modern, and users
+                                    understood key actions much faster.Navigation became simpler, the interface felt
+                                    modern, and users understood key actions much faster.Navigation became simpler, the
+                                    interface felt modern.</p>
+                                <div class="flex pt-4">
+                                    <img src="assets/image/star-fill.svg" alt="star-icon">
+                                    <img src="assets/image/star-fill.svg" alt="star-icon">
+                                    <img src="assets/image/star-fill.svg" alt="star-icon">
+                                    <img src="assets/image/star-fill.svg" alt="star-icon">
+                                    <img src="assets/image/star-gray.svg" alt="star-icon">
+                                </div>
+                            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+
+
+
+                    </li>
+
+
+
+
+
+                </ul>
+            </div>
+        </div>
+
+
+
+    </section>
+    <!-- testimonial section end  -->
+
+
+    <!-- marquee slider  -->
+    <section>
+        <div class="overflow-hidden lg:py-9 py-4 bg-primary">
+            <div class="marquee-track ">
+                <!-- Cards set 1 -->
+                <div class="slide-card flex lg:gap-x-12 gap-x-3 items-center">
+                    <img class="m-w-[58px] w-[40px]" src="assets/image/Union.svg" alt="start-icon">
+                    <h2 class="lg:text-[64px] text-[32px] font-bold leading-[120.313%] uppercase text-white">Web
+                        Development</h2>
+                </div>
+                <div class="slide-card flex lg:gap-x-12 gap-x-3 items-center">
+                    <img class="m-w-[58px] w-[40px]" src="assets/image/Union.svg" alt="start-icon">
+                    <h2 class="lg:text-[64px] text-[32px] font-bold leading-[120.313%] uppercase text-white">Mobile app
+                        design</h2>
+                </div>
+                <div class="slide-card flex lg:gap-x-12 gap-x-3 items-center">
+                    <img class="m-w-[58px] w-[40px]" src="assets/image/Union.svg" alt="start-icon">
+                    <h2 class="lg:text-[64px] text-[32px] font-bold leading-[120.313%] uppercase text-white">Saas Design
+                    </h2>
+                </div>
+                <div class="slide-card flex lg:gap-x-12 gap-x-3 items-center">
+                    <img class="m-w-[58px] w-[40px]" src="assets/image/Union.svg" alt="start-icon">
+                    <h2 class="lg:text-[64px] text-[32px] font-bold leading-[120.313%] uppercase text-white">UI/UX
+                        Design</h2>
+                </div>
+                <div class="slide-card flex lg:gap-x-12 gap-x-3 items-center">
+                    <img class="m-w-[58px] w-[40px]" src="assets/image/Union.svg" alt="start-icon">
+                    <h2 class="lg:text-[64px] text-[32px] font-bold leading-[120.313%] uppercase text-white">Web
+                        Development</h2>
+                </div>
+                <div class="slide-card flex lg:gap-x-12 gap-x-3 items-center">
+                    <img class="m-w-[58px] w-[40px]" src="assets/image/Union.svg" alt="start-icon">
+                    <h2 class="lg:text-[64px] text-[32px] font-bold leading-[120.313%] uppercase text-white">Branding
+                    </h2>
+                </div>
+
+
+
+
+                <!-- Duplicate set for seamless loop -->
+                <div class="slide-card flex lg:gap-x-12 gap-x-3 items-center">
+                    <img class="m-w-[58px] w-[40px]" src="assets/image/Union.svg" alt="start-icon">
+                    <h2 class="lg:text-[64px] text-[32px] font-bold leading-[120.313%] uppercase text-white">Web
+                        Development</h2>
+                </div>
+                <div class="slide-card flex lg:gap-x-12 gap-x-3 items-center">
+                    <img class="m-w-[58px] w-[40px]" src="assets/image/Union.svg" alt="start-icon">
+                    <h2 class="lg:text-[64px] text-[32px] font-bold leading-[120.313%] uppercase text-white">Mobile app
+                        design</h2>
+                </div>
+                <div class="slide-card flex lg:gap-x-12 gap-x-3 items-center">
+                    <img class="m-w-[58px] w-[40px]" src="assets/image/Union.svg" alt="start-icon">
+                    <h2 class="lg:text-[64px] text-[32px] font-bold leading-[120.313%] uppercase text-white">Saas Design
+                    </h2>
+                </div>
+                <div class="slide-card flex lg:gap-x-12 gap-x-3 items-center">
+                    <img class="m-w-[58px] w-[40px]" src="assets/image/Union.svg" alt="start-icon">
+                    <h2 class="lg:text-[64px] text-[32px] font-bold leading-[120.313%] uppercase text-white">UI/UX
+                        Design</h2>
+                </div>
+                <div class="slide-card flex lg:gap-x-12 gap-x-3 items-center">
+                    <img class="m-w-[58px] w-[40px]" src="assets/image/Union.svg" alt="start-icon">
+                    <h2 class="lg:text-[64px] text-[32px] font-bold leading-[120.313%] uppercase text-white">Web
+                        Development</h2>
+                </div>
+                <div class="slide-card flex lg:gap-x-12 gap-x-3 items-center">
+                    <img class="m-w-[58px] w-[40px]" src="assets/image/Union.svg" alt="start-icon">
+                    <h2 class="lg:text-[64px] text-[32px] font-bold leading-[120.313%] uppercase text-white">Branding
+                    </h2>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- marquee slider  -->
+
+    <footer class="lg:pb-16 pb-14 lg:pt-16 pt-14">
+        <div class="container px-[16px]">
+            <div class="flex lg:flex-row flex-col lg:items-center lg:justify-between gap-16 md:gap-10">
+                <div>
+                    <div class="flex items-center gap-3">
+                        <img src="assets/image/logo-img.svg" alt="person image">
+                        <h5 class="text-2xl font-bold leading-[120.833%] uppercase text-[#4B5563]">SHAH ALAM</h5>
+                    </div>
+                    <div class="w-full h-[1px] bg-[#D1D5DB] my-4"></div>
+                    <div class="lg:max-w-[444px] md:max-w-[444px]">
+                        <h5 class="lg:text-2xl font-bold leading-[120.833%] uppercase text-[#4B5563]">I turn ideas into
+                            user-friendly designs that feel simple and purposeful.</h5>
+                    </div>
+                </div>
+                <div>
+                    <ul class="flex flex-col gap-2">
+                        <li><a class="text-[16px] font-normal leading-[137.5%] text-[#4B5563]" href="">Home</a></li>
+                        <li><a class="text-[16px] font-normal leading-[137.5%] text-[#4B5563]"
+                                href="#service">Services</a></li>
+                        <li><a class="text-[16px] font-normal leading-[137.5%] text-[#4B5563]" href="#about">About</a>
+                        </li>
+                        <li><a class="text-[16px] font-normal leading-[137.5%] text-[#4B5563]"
+                                href="project.html">Projects</a></li>
+                        <li><a class="text-[16px] font-normal leading-[137.5%] text-[#4B5563]"
+                                href="#testimonial">Testimonials</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js%22"></script>
+    <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+
+    <script src=" ./assets/js/script.js"></script>
+
+</body>
+
+</html>
